@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自嗨留言室</title>
+</head>
+<body>
+    <style type="text/css" >
+    @import url(style.css);
+    </style>
+    <!-- 媒体流取 -->
+    <div class="main">
+        <h1 style="color: fuchsia;">自拍间留言室</h1>
+    <video id="video" width="500px" height="500px"></video>
+        <p>
+            <input type="button" id="start" onclick="getMedia()" value="打开摄像头"></input>
+            <input type="button" id="snap" onclick="takephoto()" value="拍照截图"></input>
+            <input type="button" id="check" onclick="startRecorder()" value="开始录制" />
+            <input type="button" id="stop" onclick="stopRecorder()" value="停止录制" />
+            <a id="download" class="button">录制下载</a>
+            <input type="button" id="close"   onclick="stopVideo(video)"  value="关闭摄像头"></input>
+            <br>  
+            
+            <h1 style="color: fuchsia;">输出照片位置：</h1>
+        </p>
+        <!-- 拍照截图 -->
+
+        <canvas  id="canvas" width="500px" height="500px" ></canvas>
+    </div>
+    <div class="wrapper">   
+        <h1 style="color: fuchsia;">留言区：</h1>
+        <div class="fontend">
+            昵称：<input class="username" type="text" name="name" id="username" >
+            <br>
+            <!-- <textarea name="" id="tex" cols="30" rows="10" maxlength="150" placeholder="请输入留言"></textarea> -->
+            输入：<textarea  class="text" name="text" id="txt" cols="30" rows="10" value="" placeholder="留下足迹吧"></textarea>
+            <br>
+            <input type="button"  class="sumbit" name="提交" id="sumbit" value="提交" onclick="textfunction()">
+        </div>
+        <div id="content">
+            <!-- 留言区 -->
+            <!-- 昵称、内容、时间、删除按钮 -->
+        </div>   
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+    <script>
+    </script>
+</body>
+</html>

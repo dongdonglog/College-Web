@@ -1,0 +1,42 @@
+body{
+    background-color:khaki;
+}
+.button{
+    text-decoration: none;
+    background: #F0F0F0;
+    color: black;
+    border: 1px solid grey;
+    padding: 1px 5px;
+    font-size:14px;
+    border-radius: 3px;
+}
+.main{
+    text-align:center;
+}
+.wrapper{
+    text-align:center;
+}
+.username{
+    margin-right: 58px;
+    width: 223px;
+}
+.text{
+    margin-right: 55px;
+}
+.sumbit{
+    margin-right:200px;
+}
+.nicheng{
+    margin-right:250px;
+    background-color:beige;
+}
+.timearea{
+    padding-left: 100px;
+}
+.liuyan{
+    margin-right:10px;
+    background-color: cadetblue;
+}
+.list{
+    text-align: center;
+}
